@@ -544,9 +544,10 @@
                   </svg>
                   Resume
                 </a>
+                {/* Changed button from "About Me" to "Contact" and linked to contact */}
                 <a
-                  href="#about"
-                  onClick={(e) => handleNavClick(e, "#about")}
+                  href="#contact"
+                  onClick={(e) => handleNavClick(e, "#contact")}
                   className="inline-flex items-center gap-2 btn-grad text-white font-semibold py-3 px-8 rounded-full shadow-lg shadow-cyan-500/50 neon-hover"
                 >
                   <svg
@@ -562,7 +563,7 @@
                       d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                     />
                   </svg>
-                  About Me
+                  Contact
                 </a>
               </div>
             </section>
@@ -608,7 +609,7 @@
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
                 {/* Programming */}
                 <div className="glass-panel rounded-2xl p-6 flex flex-col border-t-2 border-t-cyan-500">
-                  <span className="text-4xl mb-3"></span>
+                  <span className="text-4xl mb-3">⌨️</span>
                   <h3 className="text-xl font-semibold text-cyan-900 mb-3">Programming</h3>
                   <div className="flex flex-wrap gap-2 mt-auto">
                     {["Python", "Java", "JavaScript"].map((s) => (
@@ -617,7 +618,7 @@
                   </div>
                 </div>
                 <div className="glass-panel rounded-2xl p-6 flex flex-col border-t-2 border-t-cyan-500">
-                  <span className="text-4xl mb-3"></span>
+                  <span className="text-4xl mb-3">🌐</span>
                   <h3 className="text-xl font-semibold text-cyan-900 mb-3">Frontend (Web Tech)</h3>
                   <div className="flex flex-wrap gap-2 mt-auto">
                     {["HTML", "CSS", "React.js"].map((s) => (
@@ -626,7 +627,7 @@
                   </div>
                 </div>
                 <div className="glass-panel rounded-2xl p-6 flex flex-col border-t-2 border-t-cyan-500">
-                  <span className="text-4xl mb-3"></span>
+                  <span className="text-4xl mb-3">⚙️</span>
                   <h3 className="text-xl font-semibold text-cyan-900 mb-3">Backend Server</h3>
                   <div className="flex flex-wrap gap-2 mt-auto">
                     {["Node.js", "Express.js"].map((s) => (
@@ -635,7 +636,7 @@
                   </div>
                 </div>
                 <div className="glass-panel rounded-2xl p-6 flex flex-col border-t-2 border-t-cyan-500">
-                  <span className="text-4xl mb-3"></span>
+                  <span className="text-4xl mb-3">🗄️</span>
                   <h3 className="text-xl font-semibold text-cyan-900 mb-3">Databases</h3>
                   <div className="flex flex-wrap gap-2 mt-auto">
                     {["MongoDB", "MySQL"].map((s) => (
@@ -644,7 +645,7 @@
                   </div>
                 </div>
                 <div className="glass-panel rounded-2xl p-6 flex flex-col border-t-2 border-t-cyan-500">
-                  <span className="text-4xl mb-3"></span>
+                  <span className="text-4xl mb-3">🛠️</span>
                   <h3 className="text-xl font-semibold text-cyan-900 mb-3">Tools & Libraries</h3>
                   <div className="flex flex-wrap gap-2 mt-auto">
                     {["Git", "Postman"].map((s) => (
@@ -653,7 +654,7 @@
                   </div>
                 </div>
                 <div className="glass-panel rounded-2xl p-6 flex flex-col border-t-2 border-t-cyan-500">
-                  <span className="text-4xl mb-3"></span>
+                  <span className="text-4xl mb-3">🧠</span>
                   <h3 className="text-xl font-semibold text-cyan-900 mb-3">Soft Skills</h3>
                   <div className="flex flex-wrap gap-2 mt-auto">
                     {["Problem Solving", "Fast Learner", "Time Management", "Teamwork"].map((s) => (
@@ -743,28 +744,28 @@
               <div className="glass-panel rounded-3xl p-8 md:p-10">
                 <ul className="space-y-6 text-cyan-800">
                   <li className="flex items-start gap-4">
-                    <span className="text-cyan-600 text-2xl"></span>
+                    <span className="text-cyan-600 text-2xl">📜</span>
                     <div>
                       <p className="text-cyan-900 font-semibold">MERN Stack Certificate</p>
                       <p className="text-cyan-700">Gained certificate from Simplilearn for MERN Stack.</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
-                    <span className="text-cyan-500 text-2xl"></span>
+                    <span className="text-cyan-500 text-2xl">📊</span>
                     <div>
                       <p className="text-cyan-900 font-semibold">MS Excel (Basic) Certification</p>
                       <p className="text-cyan-700">Received certification from Simplilearn.</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
-                    <span className="text-cyan-600 text-2xl"></span>
+                    <span className="text-cyan-600 text-2xl">🏆</span>
                     <div>
                       <p className="text-cyan-900 font-semibold">Technical Quiz Winner</p>
                       <p className="text-cyan-700">Won First Prize in Technical Quiz conducted by "CRENNOVA-25" at Salem Engineering College.</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-4">
-                    <span className="text-cyan-500 text-2xl"></span>
+                    <span className="text-cyan-500 text-2xl">🔧</span>
                     <div>
                       <p className="text-cyan-900 font-semibold">Industrial Visit Certificate</p>
                       <p className="text-cyan-700">Gained certificate for attending the Industrial visit at Techvolt Software Pvt. Ltd.</p>
@@ -788,7 +789,7 @@
               <div className="grid md:grid-cols-5 gap-8">
                 <div className="md:col-span-2 glass-panel rounded-3xl p-8 flex flex-col">
                   <h3 className="text-2xl font-semibold text-cyan-900 mb-8 flex items-center gap-2">
-                    <span className="text-cyan-600"></span> Contact Info
+                    <span className="text-cyan-600">📬</span> Contact Info
                   </h3>
 
                   <div className="space-y-6">
@@ -856,7 +857,7 @@
 
                 <div className="md:col-span-3 glass-panel rounded-3xl p-8">
                   <h3 className="text-2xl font-semibold text-cyan-900 mb-6 flex gap-2">
-                    <span className="text-cyan-600"></span> Send a message
+                    <span className="text-cyan-600">✉️</span> Send a message
                   </h3>
                   <form
                     action="mailto:sharavanavelj@gmail.com"
@@ -897,7 +898,7 @@
                       type="submit"
                       className="w-full btn-grad text-white font-bold py-4 rounded-xl text-lg tracking-wide shadow-lg shadow-cyan-500/50 neon-hover"
                     >
-                       Launch via email
+                      🚀 Launch via email
                     </button>
                     <p className="text-xs text-cyan-600 text-center mt-3">
                       (opens your default mail app)
